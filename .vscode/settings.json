@@ -1,0 +1,13 @@
+{
+    "lldb.showDisassembly": "auto",
+    "lldb.dereferencePointers": true,
+    "lldb.consoleMode": "commands",
+    "cSpell.words": [
+        "codegen",
+        "huffsamuel",
+        "openapi",
+        "openapix",
+        "spacetraders",
+        "templateengine"
+    ]
+}

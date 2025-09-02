@@ -1,0 +1,17 @@
+{{ > comment }}
+{{ #isEnum }}
+export enum {{ typename }} {
+    {{ #enum }}
+      {{ name }} = "{{value}}",
+    {{ /enum }}
+}
+{{ /isEnum }}
+{{ #isObject }}
+export type {{ typename }} = {
+    {{ #properties }}
+    {{ > comment }}
+    {{ name }}: {{ type }};
+    {{ /properties }}
+}
+{{ /isObject }}
+{{ #isTypedef }}export type {{ typename }} = {{type}};{{ /isTypedef }}
